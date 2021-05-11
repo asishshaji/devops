@@ -1,0 +1,6 @@
+Compile/Build - Testing - Deploying
+
+eg : Jenkins, bamboo
+
+Jenkins
+--------

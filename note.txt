@@ -1,0 +1,88 @@
+Waterfall model
+----------------
+Requirements are clear and fixed
+Product definition is stable
+Addition of new requirements are difficult
+
+Agile model
+------------
+Used when requirements change frequently
+Used when developments need to be fast
+More flexibility
+Write the features, prioritize them. (Called product backlog)
+Entire team works together
+Iterative and incremental development model
+
+
+git
+----
+Distributed VCS for tracking changes in computer files and coordinating work on those files
+among multiple users.
+
+Tag
+Commit
+URL
+Index
+Head
+Branch
+
+Git states
+---------
+Modified - File that have been changed, but changes have not yet not been marked by git. These changes won't become part of the next snapshot.
+Staged - Changes have been tracked by the git and will be marked as such in the next snapshot.
+Committed - the changes are successfully become part of the latest snapshot.
+
+A repository is a directory where your project resides.
+
+git config --global user.email "asishshajithomas@gmail.com"
+git config --global user.name "Asish Shaji"
+git config --global user.password "asdasdasd"
+git config --global l //Prints all the global level configurations
+git status : it prints out the git state
+
+git add file_name : adds file to the staging area
+git rm --cached file_name : removes from staging area to untracked
+git commit -m "" :moves from staging to local repository
+git log : Shows all commits
+
+Most latest commit points to "HEAD"
+
+git reset file_name // Unstage
+
+git diff : Difference bw the Committed file and the local file
+
+Formatting git log
+------------------
+git log --pretty=oneline
+git log --pretty=short
+git log --pretty=full
+git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
+
+
+
+
+git log --parents  //Commit chain
+
+git ls-files // gives list of files in current committed branch
+git show // shows changes happened in a particular commit, ie the metadata
+
+git branch branch_name
+git branch // shows all the branches
+git checkout branch_name // switch to branch branch_name
+git checkout -b branch_name //creates branch with branch_name and switches
+git reset --hard commitid // time travel to old commit id
+
+git remote add origin remote_url
+origin is used to refer to the remote repository
+
+
+git push origin master // origin : variable remote url, master : branch name
+git push origin test
+
+git push --all origin
+
+git pull origin master
+git pull remote_url
+
+git stash save //temporarily saves the files, without committing https://www.tutorialspoint.com/git/git_stash_operation.htm
+git stash pop
